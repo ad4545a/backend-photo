@@ -1,0 +1,30 @@
+{
+  "name": "swarnkar-samaj-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend for Akhil Bhartiya Swarnkar Samaj gallery site. Photos are stored on Telegram (via a bot), videos are stored on Google Drive, and all metadata/links live in MongoDB.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "hash-password": "node scripts/hashPassword.js",
+    "google-auth": "node scripts/getGoogleRefreshToken.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "form-data": "^4.0.0",
+    "googleapis": "^173.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^7.5.0",
+    "mongoose": "^8.5.1",
+    "node-cron": "^4.6.0",
+    "node-fetch": "^3.3.2",
+    "uuid": "^14.0.1"
+  }
+}
